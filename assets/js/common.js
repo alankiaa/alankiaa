@@ -12,7 +12,7 @@ window.onload = (event) =>{
     }
 
     checkbox.addEventListener('change', function() {
-    if (filename == 'index.html') {
+    if (!checkbox.checked) {
         setTimeout(() => { window.location ='arabic.html'}, 500);
     } else {
         setTimeout(() => { window.location ='index.html'}, 500);

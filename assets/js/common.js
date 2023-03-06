@@ -5,10 +5,10 @@ window.onload = (event) =>{
 
     let checkbox = document.querySelector("input[name=language-toggle]");
 
-    if (filename == 'index.html') {
-        checkbox.checked = false
-    }else{
+    if (filename == 'arabic.html') {
         checkbox.checked = true
+    }else{
+        checkbox.checked = false
     }
 
     checkbox.addEventListener('change', function() {

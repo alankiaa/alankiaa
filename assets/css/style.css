@@ -1177,8 +1177,8 @@ img.mfp-img {
 	
 }
 .wrapsection {  
-    padding-top:140px;
-	padding-bottom:140px;
+    padding-top: 6rem;
+		padding-bottom: 6rem;
     position: relative;
   }
 
@@ -1434,4 +1434,69 @@ input.check-toggle-round-flat:checked + label {
 
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
+}
+
+.description {
+	position: absolute;
+	bottom: 2rem;
+	right: 0;
+	width: 100%;
+	background: #115e0e8b;
+	padding: 1rem;
+}
+
+.ol-flex-container{
+	display: flex;
+  flex-wrap: wrap;
+  direction: rtl;
+}
+
+.ol-flex-container li{
+	flex: 1 0 25%; /* grow, shrink, basis */
+  text-align: right;
+}
+
+.ltr-ol-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	direction: ltr;
+}
+
+.ltr-ol-flex-container li {
+	flex: 1 0 25%; /* grow, shrink, basis */
+	text-align: left;
+}
+.image-container{
+	position: relative;
+	overflow: hidden;
+	margin: 1rem;
+	padding: 0;
+	border-radius: 4px;
+	flex: 0 0 100%;
+	width: 100%;
+}
+
+
+.service-box.wow.zoomIn {
+	visibility: visible !important;
+	-webkit-animation: zoomIn 0.5s;
+	-moz-animation: zoomIn 0.5s;
+	-o-animation: zoomIn 0.5s;
+	animation: zoomIn 0.5s;
+
+	padding: 2rem 
+}
+
+@media screen and (min-width: 768px) {
+	.image-container{
+		flex: 0 0 45%
+	}
+	
+}
+
+@media screen and (min-width: 992px) {
+	.image-container{
+		flex: 0 0 30%
+	}
+	
 }
